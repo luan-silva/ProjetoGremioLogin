@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarRoupasActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="281dp"
+        android:layout_height="304dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Seja Bem Vindo"
+        android:onClick="abrirGaleria2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sale_editText_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPreco"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="Preço de venda"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bought_price_edLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/sale_editText_layout"
+        app:layout_constraintStart_toStartOf="@+id/sale_editText_layout"
+        app:layout_constraintTop_toBottomOf="@+id/sale_editText_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bough_price_editText"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="Preço de compra"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/category_edLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/bought_price_edLayout"
+        app:layout_constraintStart_toStartOf="@+id/bought_price_edLayout"
+        app:layout_constraintTop_toBottomOf="@+id/bought_price_edLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/category_editText"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="Categoria" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/description_edLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_edLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description_editText"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="Descrição" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cadastrar Roupa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_edLayout" />
+
+    <Button
+        android:id="@+id/buttonFeedActivity"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="Visualizar Roupas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEnviar" />
+
+    <Button
+        android:id="@+id/share_clothes"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="Compartilhar Roupas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFeedActivity" />
+
+    <ProgressBar
+        android:id="@+id/cadastroProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
